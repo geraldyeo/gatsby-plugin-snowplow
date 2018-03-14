@@ -1,0 +1,42 @@
+{
+  "name": "gatsby-plugin-snowplow",
+  "version": "1.0.0",
+  "author": "Gerald Yeo <gerald.yeo@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geraldyeo/gatsby-plugin-snowplow.git"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "watch": "yarn run build -w",
+    "prepublish": "cross-env NODE_ENV=production yarn run build",
+    "publish": "semantic-release",
+    "publish:dry-run": "semantic-release --debug --dry-run --no-ci"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.1.4",
+    "semantic-release": "^15.0.3"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0"
+  },
+  "release": {
+    "publish": [
+      "@semantic-release/github",
+      "@semantic-release/npm"
+    ],
+    "verifyConditions": [
+      "@semantic-release/github",
+      "@semantic-release/npm"
+    ]
+  }
+}
