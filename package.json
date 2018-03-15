@@ -4,14 +4,14 @@
   "author": "Gerald Yeo <gerald.yeo@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/geraldyeo/gatsby-plugin-snowplow.git"
+    "url": "git@github.com:geraldyeo/gatsby-plugin-snowplow.git"
   },
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "build": "babel src --out-dir .",
     "watch": "yarn run build -w",
-    "prepublish": "cross-env NODE_ENV=production yarn run build",
+    "prepublishOnly": "cross-env NODE_ENV=production yarn run build",
     "publish": "semantic-release",
     "publish:dry-run": "semantic-release --debug --dry-run --no-ci"
   },
