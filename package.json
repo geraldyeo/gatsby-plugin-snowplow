@@ -1,6 +1,10 @@
 {
   "name": "gatsby-plugin-snowplow",
   "version": "1.0.0",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin"
+  ],
   "author": "Gerald Yeo <gerald.yeo@gmail.com>",
   "repository": {
     "type": "git",
