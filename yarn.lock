@@ -2374,8 +2374,8 @@ node-emoji@^1.4.1:
     lodash.toarray "^4.4.0"
 
 node-fetch@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.1.1.tgz#369ca70b82f50c86496104a6c776d274f4e4a2d4"
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
 
 node-pre-gyp@^0.6.39:
   version "0.6.39"
